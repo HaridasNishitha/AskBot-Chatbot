@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskBot Authentication </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <form onsubmit="redirectToNextPage(); return false;">
+            <h1>Login</h1>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" required>
+                <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required>
+                <label for="">Password</label>
+            </div>
+            <div class="forget">
+                <label for=""><input type="checkbox">Remember Me</label>
+                <a href="forgot.html">Forget Password</a>
+            </div>
+            <button type="submit">Log in</button>
+            <div class="register">
+                <p>Don't have an account? <a href="registration.html">Register</a></p>
+            </div>
+        </form>
+    </section>
+
+    <script>
+        function redirectToNextPage() {
+           
+            window.location.href = 'interface.html';
+        }
+    </script>
+</body>
+</html>
